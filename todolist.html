@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"/>
+        
+        <style>
+            body{
+                background-image: url("images/wp5483384.jpeg");
+                height:auto;
+            }
+            section{
+                border: 1px solid black;
+            }
+            .some{
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #list{
+                list-style-type: decimal;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="some">
+        <section>
+            <input type="text" id="task" placeholder="Task to add">
+                <button onclick="addTask()" type="button">Add Task</button>
+                
+                <ul id="list">
+                </ul>
+        </section>
+        </div>
+        <script src="todo.js"></script>
+    </body>
+</html>
